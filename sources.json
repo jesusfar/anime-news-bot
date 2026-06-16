@@ -1,0 +1,191 @@
+[
+  {
+    "nombre": "Crunchyroll Noticias ES",
+    "url": "https://www.crunchyroll.com/es/news/rss",
+    "tipo": "rss",
+    "categoria": "Crunchyroll",
+    "prioridad": "alta",
+    "orden": 1,
+    "activo": true
+  },
+  {
+    "nombre": "Ramen Para Dos",
+    "url": "https://ramenparados.com/feed/",
+    "tipo": "rss",
+    "categoria": "Noticias de anime",
+    "prioridad": "alta",
+    "orden": 2,
+    "activo": true
+  },
+  {
+    "nombre": "Kudasai",
+    "url": "https://somoskudasai.com/feed/",
+    "tipo": "rss",
+    "categoria": "Noticias de anime",
+    "prioridad": "alta",
+    "orden": 3,
+    "activo": true
+  },
+  {
+    "nombre": "Areajugones Anime",
+    "url": "https://areajugones.sport.es/anime/",
+    "tipo": "web",
+    "categoria": "Noticias de anime",
+    "prioridad": "alta",
+    "orden": 4,
+    "activo": true,
+    "selectores": {
+      "item": "article, .post, .jeg_post, .td_module_wrap",
+      "titulo": "h2, h3, a",
+      "resumen": "p",
+      "imagen": "img"
+    }
+  },
+  {
+    "nombre": "Netflix Tudum",
+    "url": "https://www.netflix.com/tudum/topics/anime",
+    "tipo": "web",
+    "categoria": "Anime en Netflix",
+    "prioridad": "alta",
+    "orden": 5,
+    "activo": true,
+    "selectores": {
+      "item": "article, li, div[data-uia]",
+      "titulo": "h2, h3, a",
+      "resumen": "p",
+      "imagen": "img"
+    }
+  },
+  {
+    "nombre": "Netflix Newsroom",
+    "url": "https://about.netflix.com/es/news?category=anime",
+    "tipo": "web",
+    "categoria": "Anime en Netflix",
+    "prioridad": "alta",
+    "orden": 6,
+    "activo": true,
+    "selectores": {
+      "item": "article, li, .card, .post",
+      "titulo": "h2, h3, a",
+      "resumen": "p",
+      "imagen": "img"
+    }
+  },
+  {
+    "nombre": "Netflix Anime YouTube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGie8GMlUo3kBKIopdvumVQ",
+    "tipo": "rss",
+    "categoria": "Anime en Netflix",
+    "prioridad": "alta",
+    "orden": 7,
+    "activo": true
+  },
+  {
+    "nombre": "Vandal Anime",
+    "url": "https://vandal.elespanol.com/anime",
+    "tipo": "web",
+    "categoria": "Noticias de anime",
+    "prioridad": "media",
+    "orden": 1,
+    "activo": true,
+    "selectores": {
+      "item": "article, .news, .noticia, li",
+      "titulo": "h2, h3, a",
+      "resumen": "p",
+      "imagen": "img"
+    }
+  },
+  {
+    "nombre": "Hobby Consolas Anime",
+    "url": "https://www.hobbyconsolas.com/tags/anime",
+    "tipo": "web",
+    "categoria": "Noticias de anime",
+    "prioridad": "media",
+    "orden": 2,
+    "activo": true,
+    "selectores": {
+      "item": "article, .card, .listing-item, li",
+      "titulo": "h2, h3, a",
+      "resumen": "p",
+      "imagen": "img"
+    }
+  },
+  {
+    "nombre": "Misión Tokyo",
+    "url": "https://misiontokyo.com/feed",
+    "tipo": "rss",
+    "categoria": "Noticias de anime",
+    "prioridad": "media",
+    "orden": 3,
+    "activo": true
+  },
+  {
+    "nombre": "MeriStation Manga y Anime",
+    "url": "https://as.com/meristation/manga-y-anime/",
+    "tipo": "web",
+    "categoria": "Manga y anime",
+    "prioridad": "media",
+    "orden": 4,
+    "activo": true,
+    "selectores": {
+      "item": "article, .story-card, .s",
+      "titulo": "h2, h3, a",
+      "resumen": "p",
+      "imagen": "img"
+    }
+  },
+  {
+    "nombre": "Netflix catálogo anime",
+    "url": "https://www.netflix.com/browse/genre/7424",
+    "tipo": "web",
+    "categoria": "Anime en Netflix",
+    "prioridad": "media",
+    "orden": 5,
+    "activo": true,
+    "selectores": {
+      "item": "article, li, .nm-content-horizontal-row-item, .title-card",
+      "titulo": "h2, h3, a, .fallback-text",
+      "resumen": "p",
+      "imagen": "img"
+    }
+  },
+  {
+    "nombre": "Crunchyroll España X",
+    "url": "https://x.com/Crunchyroll_es",
+    "tipo": "web",
+    "categoria": "Crunchyroll",
+    "prioridad": "media",
+    "orden": 6,
+    "activo": true,
+    "selectores": {
+      "item": "article, div[data-testid='tweet']",
+      "titulo": "div[data-testid='tweetText'], a",
+      "resumen": "div[data-testid='tweetText']",
+      "imagen": "img"
+    }
+  },
+  {
+    "nombre": "Kudasai X",
+    "url": "https://x.com/somoskudasai",
+    "tipo": "web",
+    "categoria": "Noticias de anime",
+    "prioridad": "media",
+    "orden": 7,
+    "activo": true,
+    "selectores": {
+      "item": "article, div[data-testid='tweet']",
+      "titulo": "div[data-testid='tweetText'], a",
+      "resumen": "div[data-testid='tweetText']",
+      "imagen": "img"
+    }
+  },
+  {
+    "nombre": "Anime News Network",
+    "url": "https://www.animenewsnetwork.com/news/rss.xml",
+    "tipo": "rss",
+    "categoria": "Noticias de anime",
+    "prioridad": "respaldo",
+    "orden": 1,
+    "activo": true
+  }
+]

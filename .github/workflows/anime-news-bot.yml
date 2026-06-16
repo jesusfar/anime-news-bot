@@ -1,0 +1,40 @@
+name: Anime News Bot
+
+on:
+  schedule:
+    - cron: "0 12,23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publicar-noticias:
+    name: Publicar noticias
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar bot
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python bot.py
+
+      - name: Guardar cache actualizado
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cache.json
+          git diff --cached --quiet || git commit -m "Actualizar cache de noticias"
+          git push
